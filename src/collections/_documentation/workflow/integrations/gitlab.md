@@ -3,13 +3,23 @@ title: GitLab
 sidebar_order: 6
 ---
 
-Sentry’s new GitLab integration helps you find and fix bugs faster by using data from your GitLab commits. Additionally, you can streamline your triaging process by creating a GitLab issue directly from Sentry. _Note: this feature is currently available for Early Adopters. You can become an Early Adopter by navigating to your Organization Settings > General Settings._
+Sentry’s new GitLab integration helps you find and fix bugs faster by using data from your GitLab commits. You can also streamline your triaging process by creating GitLab issues directly from Sentry.
 
 ## Configure GitLab
 
-1. In Sentry, navigate to Organization Settings > Integrations. _Note: only users with Owner and Manager permissions have access._
+{% capture __alert_content -%}
+Sentry owner or manager permissions are required to install this integration.
 
-1. Within Integrations, find the GitLab icon and click ‘Install.’
+Learn more about roles in Sentry [here]({%- link _documentation/accounts/membership.md -%}).
+{%- endcapture -%}
+{%- include components/alert.html
+  title="Note"
+  content=__alert_content
+%}
+
+1. In Sentry, navigate to Organization Settings > Integrations.
+
+1. Within Integrations, find the GitLab icon and click ‘Install’.
 
     {% asset gitlab/integration-pg.png alt="Sentry integrations page showing GitLab integration icon and install button." %}
 

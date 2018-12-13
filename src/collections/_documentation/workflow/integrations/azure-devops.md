@@ -24,8 +24,10 @@ Sentry owner or manager permissions, and Azure project admin permissions are req
     > [{% asset azure-global-add-installation.png %}]({% asset azure-global-add-installation.png @path %})
     
 4. An Azure DevOps install window should pop up. Select the Azure DevOps account you'd like to link with Sentry, and press **Submit**.
+5. On your new Azure DevOps instance in Sentry, click **Configure**.
+6. Review and configure your sync settings and add any repositories from which you want to collect commit data.
 
-Azure DevOps should now be enabled for all projects under your Sentry organization, but you'll need to configure the features below.
+Azure DevOps should now be enabled for all projects under your Sentry organization.
 
 > [{% asset azure-global-installed.png %}]({% asset azure-global-installed.png @path %})  
 

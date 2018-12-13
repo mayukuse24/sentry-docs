@@ -6,6 +6,16 @@ Sentry’s new Github Enterprise integration has the following features: commit 
 
 ## Configure Github Enterprise
 
+{% capture __alert_content -%}
+Sentry owner or manager permissions are required to install this integration.
+
+Learn more about roles in Sentry [here]({%- link _documentation/accounts/membership.md -%}).
+{%- endcapture -%}
+{%- include components/alert.html
+  title="Note"
+  content=__alert_content
+%}
+
 ### Part One: Setup a Github App
 
 1. Make sure you’ve whitelisted Sentry’s [outbound request IPs addresses](https://docs.sentry.io/ip-ranges/) for your Github Enterprise instance.
